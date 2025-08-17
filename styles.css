@@ -1,11 +1,71 @@
+
+/* CSS HSL */
+:root {
+    --alabaster: hsla(47, 35%, 90%, 1);
+    --harvest-yellow: rgb(252, 241, 23);
+    --battleship-gray: hsla(37, 7%, 53%, 0.2);
+    --eerie-black: hsla(210, 3%, 11%, 1);
+}
+
 h1 {
-    color:white;
+    color:var(--harvest-yellow);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6)
 }
 p {
-    color:white;
+    color:var(--alabaster);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-    background-color: chocolate;
+    background-color: var(--eerie-black);
+}
+.result {
+    color: var(--alabaster);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    padding: 0px;
+}
+.card {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    background-color: var(--battleship-gray);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+input[type=number] {
+    background-color: var(--battleship-gray);
+    color: var(--alabaster);
+    border-radius: 6px;
+    font-size: medium;
+    border: 2px solid var(--eerie-black);
+    padding: 5px;
+    box-sizing: border-box;
+}
+#navBar {
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+}
+li {
+    float: right;
+    display: inline;
+}
+a {
+    padding: 8px;
+    color: var(--battleship-gray);
+    text-shadow: 0px 0px 13px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+}
+a:hover {
+    color: var(--alabaster);
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 90%;
+    }
 }

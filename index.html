@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+    <meta lang="FI">
+    <meta title="SytPym">
     <link rel="stylesheet" href="styles.css">
-    <title>Sytpym</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SytPym</title>
 </head>
+
 <body>
-    <h1>Sytpym laskin</h1>
-    <p>Laske suurin tai pienin yhteinen tekijä</p>
+    <div class="card">
+        <h1>SytPym laskin</h1>
+        <p>Laske suurin yhteinen tekijä tai pienin yhteinen monikerta!</p>
+
+        <input type="number" id="first" name="first" class="field">
+        <input type="number" id="second" name="second" class="field"><br>
+    </div>
 
     <div class="card">
-        <form>
-            <label for="first">First number:</label>
-            <input type="number" id="first" name="first"><br>
-            <label for="Second">Second number:</label>
-            <input type="number" id="second" name="second"><br>
-            
-            <input type="submit" value="Submit">
-        </form>
+        <p id="result1" class="result">syt: </p>
+        <p id="result2" class="result">pymf: </p>
     </div>
+
+    <ul id="navBar">
+        <li><a href="mailto:kuutti.taavitsainen@icloud.com">Feedback</a></li>
+        <li><a href="https:/kudekubestudios.fi" target="_blank">KudeKube Studios</a></li>
+    </ul>
+
+
+    <script src="code.js"></script>
 </body>
